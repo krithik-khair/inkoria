@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/inkoria
+
+media_folder: "images/covers"
+public_folder: "/images/covers"
+
+collections:
+  - name: "books"
+    label: "Books"
+    files:
+      - file: "data/books.json"
+        label: "Book Database"
+        name: "books"
+        fields:
+          - label: "Books"
+            name: "books"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Cover Image", name: "image", widget: "image"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Featured", name: "featured", widget: "boolean"}
