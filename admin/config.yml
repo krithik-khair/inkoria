@@ -18,8 +18,10 @@ collections:
             name: "books"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Category", name: "category", widget: "string"}
-              - {label: "Cover Image", name: "image", widget: "image"}
-              - {label: "Link", name: "link", widget: "string"}
-              - {label: "Featured", name: "featured", widget: "boolean"}
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Cover Image", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Featured", name: "featured", widget: "boolean" }
+
+base_url: https://api.netlify.com
