@@ -3,6 +3,8 @@ backend:
   repo: krithik-khair/inkoria
   branch: main
 
+local_backend: true
+
 media_folder: "images/covers"
 public_folder: "/images/covers"
 
