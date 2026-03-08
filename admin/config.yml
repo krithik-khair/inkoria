@@ -2,6 +2,7 @@ backend:
   name: github
   repo: krithik-khair/inkoria
   branch: main
+  auth_scope: repo
 
 local_backend: true
 
