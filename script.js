@@ -124,3 +124,34 @@ renderBooks(filtered);
 }
 
 });
+
+// Disable right click
+
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+});
+
+
+// Disable copy
+
+document.addEventListener("copy", function(e){
+  e.preventDefault();
+});
+
+
+// Disable text selection
+
+document.addEventListener("selectstart", function(e){
+  e.preventDefault();
+});
+
+
+// Disable keyboard shortcuts like Ctrl+C
+
+document.addEventListener("keydown", function(e){
+
+if(e.ctrlKey && (e.key === "c" || e.key === "u" || e.key === "x")){
+  e.preventDefault();
+}
+
+});
