@@ -2,27 +2,24 @@ backend:
   name: github
   repo: krithik-khair/inkoria
   branch: main
-  base_url: https://inkoria-auth.realkrithikkhair108.workers.dev
-  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "admin_panel"
-    label: "Inkoria Content"
+  - name: books
+    label: Books
     files:
-      - label: "Books Database"
-        name: "books_json"
-        file: "data/books.json"
+      - file: data/books.json
+        label: Books Database
+        name: books_json
         fields:
-          - label: "Books"
-            name: "books"
-            widget: "list"
-            summary: "{{fields.title}}"
+          - label: Books
+            name: books
+            widget: list
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Category", name: "category", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Link", name: "link", widget: "string"}
-              - {label: "Featured", name: "featured", widget: "boolean", default: false}
+              - { label: Title, name: title, widget: string }
+              - { label: Category, name: category, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Link, name: link, widget: string }
+              - { label: Featured, name: featured, widget: boolean, default: false }
