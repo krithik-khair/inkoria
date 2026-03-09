@@ -3,28 +3,28 @@
     {
       "title": "Kashmiri Shaivism",
       "category": "Philosophy",
-      "image": "images/1.jpg",
+      "image": "images/1.png",
       "link": "https://amazon.com",
       "featured": true
     },
     {
       "title": "Rewire Your Brain",
       "category": "Psychology",
-      "image": "images/2.jpg",
+      "image": "images/2.png",
       "link": "https://amazon.com",
       "featured": false
     },
     {
       "title": "Creating a God",
       "category": "Philosophy",
-      "image": "images/3.jpg",
+      "image": "images/3.png",
       "link": "https://amazon.com",
       "featured": false
     },
     {
       "title": "AI Disruption",
       "category": "Technology",
-      "image": "images/4.jpg",
+      "image": "images/4.png",
       "link": "https://amazon.com",
       "featured": false
     },
