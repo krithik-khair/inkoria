@@ -27,6 +27,13 @@
       "image": "images/covers/ai.jpg",
       "link": "https://amazon.com",
       "featured": false
+    },
+    {
+      "featured": true,
+      "title": "Don't Invest ",
+      "category": "Finance ",
+      "link": "amazone.com",
+      "image": "/images/1000001370.png"
     }
   ]
 }
