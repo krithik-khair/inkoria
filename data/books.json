@@ -3,28 +3,28 @@
     {
       "title": "Kashmiri Shaivism",
       "category": "Philosophy",
-      "image": "images/covers/shaivism.jpg",
+      "image": "images/1.jpg",
       "link": "https://amazon.com",
       "featured": true
     },
     {
       "title": "Rewire Your Brain",
       "category": "Psychology",
-      "image": "images/covers/brain.jpg",
+      "image": "images/2.jpg",
       "link": "https://amazon.com",
       "featured": false
     },
     {
       "title": "Creating a God",
       "category": "Philosophy",
-      "image": "images/covers/god.jpg",
+      "image": "images/3.jpg",
       "link": "https://amazon.com",
       "featured": false
     },
     {
       "title": "AI Disruption",
       "category": "Technology",
-      "image": "images/covers/ai.jpg",
+      "image": "images/4.jpg",
       "link": "https://amazon.com",
       "featured": false
     },
@@ -33,7 +33,7 @@
       "title": "Don't Invest ",
       "category": "Finance ",
       "link": "https://amazon.com",
-      "image": "/images/1000001370.png"
+      "image": "/images/5.png"
     }
   ]
 }
