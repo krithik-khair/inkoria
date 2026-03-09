@@ -2,8 +2,8 @@ backend:
   name: github
   repo: krithik-khair/inkoria
   branch: main
-  auth_type: implicit
-  app_id: Iv1.8f9c0c2d0f6e2c1c
+  base_url: https://inkoria-auth.realkrithikkhair108.workers.dev
+  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "/images"
