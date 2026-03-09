@@ -2,8 +2,7 @@ backend:
   name: github
   repo: krithik-khair/inkoria
   branch: main
-  base_url: https://oauth.decapcms.org
-  auth_endpoint: /auth
+  open_authoring: true
 
 media_folder: "images"
 public_folder: "/images"
