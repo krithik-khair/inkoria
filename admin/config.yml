@@ -1,22 +1,23 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: krithik-khair/inkoria
   branch: main
 
-media_folder: "images" # Simplified to match your existing folder
+media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "admin_panel" # Unique name to prevent crashes
+  - name: "admin_panel"
     label: "Inkoria Content"
     files:
       - label: "Books Database"
-        name: "books_json" # Unique name
+        name: "books_json"
         file: "data/books.json"
         fields:
           - label: "Books"
-            name: "books" # Must match your JSON root key
+            name: "books"
             widget: "list"
-            summary: '{{fields.title}}'
+            summary: "{{fields.title}}"
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Category", name: "category", widget: "string"}
