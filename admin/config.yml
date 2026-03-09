@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: krithik-khair/inkoria
+  name: git-gateway
   branch: main
-  auth_scope: repo
-
-local_backend: true
 
 media_folder: "images/covers"
 public_folder: "/images/covers"
@@ -17,12 +13,4 @@ collections:
         label: "Book Database"
         name: "books"
         fields:
-          - label: "Books"
-            name: "books"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
-              - { label: "Cover Image", name: "image", widget: "image" }
-              - { label: "Link", name: "link", widget: "string" }
-              - { label: "Featured", name: "featured", widget: "boolean" }
+          - {label: "Books", name: "books", widget: "list"}
