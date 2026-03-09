@@ -4,7 +4,6 @@ backend:
   branch: main
   base_url: https://inkoria-auth.realkrithikkhair108.workers.dev
   auth_endpoint: auth
-  client_id: Ov23li7NYz0oHvrzpPA7
 
 media_folder: "images"
 public_folder: "/images"
