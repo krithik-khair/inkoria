@@ -161,33 +161,33 @@ text-decoration:none;
 font-size:14px;
 }
 
+.books{
+  margin-bottom:100px;
+}
+
 /* FOOTER */
 
 footer{
-  margin-top:80px;
-  padding:60px 20px;
+  margin-top:120px;
+  padding:70px 20px;
   text-align:center;
 
-  background:#ececec;      /* subtle contrast */
-  border-top:1px solid #dcdcdc;
+  background:#ececec;
+  border-top:2px solid #dcdcdc;
 
   font-family:'Playfair Display',serif;
+}
+
+footer h2{
+  font-size:28px;
+  margin-bottom:10px;
+  letter-spacing:2px;
 }
 
 footer p{
   color:#555;
   margin-top:8px;
-}
-
-footer h2{
-  margin-bottom:10px;
-  letter-spacing:2px;
-}
-
-footer{
-text-align:center;
-padding:50px 20px;
-opacity:.7;
+  font-size:15px;
 }
 
 /* DARK MODE */
