@@ -3,7 +3,7 @@ backend:
   repo: krithik-khair/inkoria
   branch: main
   base_url: https://inkoria-auth.realkrithikkhair108.workers.dev
-  auth_endpoint: auth
+  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "/images"
