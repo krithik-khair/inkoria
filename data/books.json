@@ -5,7 +5,7 @@
       "category": "Philosophy",
       "image": "images/covers/shaivism.jpg",
       "link": "https://amazon.com",
-      "featured": false
+      "featured": true
     },
     {
       "title": "Rewire Your Brain",
@@ -29,7 +29,7 @@
       "featured": false
     },
     {
-      "featured": true,
+      "featured": false,
       "title": "Don't Invest ",
       "category": "Finance ",
       "link": "https://amazon.com",
