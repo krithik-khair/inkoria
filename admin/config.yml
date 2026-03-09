@@ -9,16 +9,16 @@ collections:
   - name: "books"
     label: "Books"
     files:
-      - file: "data/books.json"
-        label: "Book Database"
+      - label: "Books Database"
         name: "books"
+        file: "data/books.json"
         fields:
           - label: "Books"
             name: "books"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Link", name: "link", widget: "string" }
-              - { label: "Featured", name: "featured", widget: "boolean" }
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Featured", name: "featured", widget: "boolean"}
