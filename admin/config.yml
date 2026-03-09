@@ -2,7 +2,6 @@ backend:
   name: github
   repo: krithik-khair/inkoria
   branch: main
-  open_authoring: true
 
 media_folder: "images"
 public_folder: "/images"
