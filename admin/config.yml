@@ -9,9 +9,9 @@ collections:
   - name: "books"
     label: "Books"
     files:
-      - label: "Books Database"
+      - file: "data/books.json"
+        label: "Book Database"
         name: "books"
-        file: "data/books.json"
         fields:
           - label: "Books"
             name: "books"
@@ -19,6 +19,6 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Image", name: "image", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
               - { label: "Link", name: "link", widget: "string" }
               - { label: "Featured", name: "featured", widget: "boolean" }
