@@ -2,23 +2,24 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/covers"
-public_folder: "/images/covers"
+media_folder: "images" # Simplified to match your existing folder
+public_folder: "/images"
 
 collections:
-  - name: "books"
-    label: "Books"
+  - name: "admin_panel" # Unique name to prevent crashes
+    label: "Inkoria Content"
     files:
       - label: "Books Database"
-        name: "books"
+        name: "books_json" # Unique name
         file: "data/books.json"
         fields:
           - label: "Books"
-            name: "books"
+            name: "books" # Must match your JSON root key
             widget: "list"
+            summary: '{{fields.title}}'
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Category", name: "category", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Link", name: "link", widget: "string"}
-              - {label: "Featured", name: "featured", widget: "boolean"}
+              - {label: "Featured", name: "featured", widget: "boolean", default: false}
