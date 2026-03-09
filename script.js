@@ -11,15 +11,34 @@ let allBooks = [];
 
 
 fetch("data/books.json")
-.then(res => res.json())
-.then(books => {
+  .then(res => res.json())
+  .then(data => {
 
-allBooks = books;
+    const books = data.books;   // THIS is the fix
 
-renderBooks(allBooks);
+    const featuredContainer = document.getElementById("featured-books");
+    const collectionContainer = document.getElementById("book-collection");
 
-});
+    books.forEach(book => {
 
+      const card = `
+        <div class="book-card">
+          <img src="${book.image}" alt="${book.title}">
+          <h3>${book.title}</h3>
+          <p>${book.category}</p>
+          <a href="${book.link}" target="_blank">View</a>
+        </div>
+      `;
+
+      if(book.featured){
+        featuredContainer.innerHTML += card;
+      } else {
+        collectionContainer.innerHTML += card;
+      }
+
+    });
+
+  });
 
 
 // RENDER BOOKS FUNCTION
