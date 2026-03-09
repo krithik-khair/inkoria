@@ -5,43 +5,25 @@ document.getElementById("dark").addEventListener("change", () => {
 });
 
 
-// BOOK DATA
+// GLOBAL BOOK STORAGE
 
 let allBooks = [];
 
+
+// LOAD BOOK DATA
 
 fetch("data/books.json")
   .then(res => res.json())
   .then(data => {
 
-    const books = data.books;   // THIS is the fix
+    allBooks = data.books;
 
-    const featuredContainer = document.getElementById("featured-books");
-    const collectionContainer = document.getElementById("book-collection");
-
-    books.forEach(book => {
-
-      const card = `
-        <div class="book-card">
-          <img src="${book.image}" alt="${book.title}">
-          <h3>${book.title}</h3>
-          <p>${book.category}</p>
-          <a href="${book.link}" target="_blank">View</a>
-        </div>
-      `;
-
-      if(book.featured){
-        featuredContainer.innerHTML += card;
-      } else {
-        collectionContainer.innerHTML += card;
-      }
-
-    });
+    renderBooks(allBooks);
 
   });
 
 
-// RENDER BOOKS FUNCTION
+// RENDER BOOKS
 
 function renderBooks(books){
 
@@ -51,11 +33,11 @@ const featured = document.getElementById("featured");
 grid.innerHTML = "";
 featured.innerHTML = "";
 
-let featuredFound = false;
+let featuredShown = false;
 
 books.forEach(book => {
 
-if(book.featured && !featuredFound){
+if(book.featured && !featuredShown){
 
 featured.innerHTML = `
 
@@ -67,13 +49,13 @@ featured.innerHTML = `
 
 <p>${book.category}</p>
 
-<a class="btn" href="${book.link}">Explore Book</a>
+<a class="btn" href="${book.link}" target="_blank">Explore Book</a>
 
 </div>
 
 `;
 
-featuredFound = true;
+featuredShown = true;
 
 }
 else{
@@ -88,7 +70,7 @@ grid.innerHTML += `
 
 <p>${book.category}</p>
 
-<a class="btn" href="${book.link}">Explore</a>
+<a class="btn" href="${book.link}" target="_blank">Explore</a>
 
 </div>
 
@@ -101,7 +83,7 @@ grid.innerHTML += `
 }
 
 
-// SEARCH FUNCTION
+// SEARCH
 
 const searchInput = document.querySelector(".search");
 
@@ -135,7 +117,6 @@ grid.innerHTML = `
 document.getElementById("featured").innerHTML = "";
 
 }
-
 else{
 
 renderBooks(filtered);
@@ -144,28 +125,23 @@ renderBooks(filtered);
 
 });
 
-// Disable right click
 
-document.addEventListener("contextmenu", function(e){
-  e.preventDefault();
-});
+// DISABLE RIGHT CLICK
 
-
-// Disable copy
-
-document.addEventListener("copy", function(e){
-  e.preventDefault();
-});
+document.addEventListener("contextmenu", e => e.preventDefault());
 
 
-// Disable text selection
+// DISABLE COPY
 
-document.addEventListener("selectstart", function(e){
-  e.preventDefault();
-});
+document.addEventListener("copy", e => e.preventDefault());
 
 
-// Disable keyboard shortcuts like Ctrl+C
+// DISABLE TEXT SELECTION
+
+document.addEventListener("selectstart", e => e.preventDefault());
+
+
+// DISABLE SHORTCUTS
 
 document.addEventListener("keydown", function(e){
 
