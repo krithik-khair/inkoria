@@ -86,11 +86,15 @@ grid.innerHTML += `
 // SEARCH
 
 const searchInput = document.querySelector(".search");
-
+const trendingSection = document.getElementById("trending-section");
 searchInput.addEventListener("input", () => {
 
 const query = searchInput.value.toLowerCase();
-
+if(query.length > 0){
+trendingSection.style.display = "none";
+}else{
+trendingSection.style.display = "block";
+}
 const filtered = allBooks.filter(book =>
 
 book.title.toLowerCase().includes(query) ||
