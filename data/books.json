@@ -15,8 +15,15 @@
       "featured": false
     },
     {
+      "title": "Elites Playbook",
+      "category": "Mass Psychology",
+      "image": "images/6.png",
+      "link": "https://amazon.com",
+      "featured": false
+    },
+    {
       "title": "Creating a God",
-      "category": "Dark Psychology",
+      "category": "Esoteric",
       "image": "images/3.png",
       "link": "https://amazon.com",
       "featured": false
@@ -25,6 +32,13 @@
       "title": "AI Disruption",
       "category": "Technology",
       "image": "images/4.png",
+      "link": "https://amazon.com",
+      "featured": false
+    },
+    {
+      "title": "Elites Playbook I",
+      "category": "Mass Psychology",
+      "image": "images/5.png",
       "link": "https://amazon.com",
       "featured": false
     },
