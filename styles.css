@@ -277,3 +277,18 @@ width:26px;
 height:26px;
 fill:#ff3b30;
 }
+
+.trending-label{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:30px;
+font-family:'Playfair Display', serif;
+margin:30px 40px 5px;
+}
+
+.fire-icon{
+width:28px;
+height:28px;
+object-fit:contain;
+}
