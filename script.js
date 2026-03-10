@@ -33,24 +33,6 @@ const featured = document.getElementById("featured");
 grid.innerHTML = "";
 featured.innerHTML = "";
 
-function renderBooks(books){
-
-const grid = document.getElementById("books");
-const featured = document.getElementById("featured");
-const trendingSection = document.getElementById("trending-section");
-
-grid.innerHTML = "";
-featured.innerHTML = "";
-
-/* CHECK IF ANY BOOK IS FEATURED */
-const featuredBook = books.find(book => book.featured);
-
-if(!featuredBook){
-trendingSection.style.display = "none";
-}
-
-let featuredShown = false;
-
 let featuredShown = false;
 
 books.forEach(book => {
