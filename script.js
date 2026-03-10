@@ -90,10 +90,15 @@ const trendingSection = document.getElementById("trending-section");
 searchInput.addEventListener("input", () => {
 
 const query = searchInput.value.toLowerCase();
+const trendingSection = document.getElementById("trending-section");
+const collectionTitle = document.getElementById("collection-title");
+
 if(query.length > 0){
 trendingSection.style.display = "none";
+collectionTitle.style.display = "none";
 }else{
 trendingSection.style.display = "block";
+collectionTitle.style.display = "block";
 }
 const filtered = allBooks.filter(book =>
 
