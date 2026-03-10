@@ -5,7 +5,7 @@
       "category": "Philosophy",
       "image": "images/1.png",
       "link": "https://amazon.com",
-      "featured": false
+      "featured": true
     },
     {
       "title": "Rewire Your Brain",
