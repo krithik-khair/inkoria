@@ -113,8 +113,10 @@ margin-bottom:10px;
 
 .section-title{
 font-family:'Playfair Display',serif;
-font-size:28px;
+font-size:32px;
 padding:0 40px;
+text-align:center;
+font-family:'Playfair Display', serif;
 }
 
 /* BOOK GRID */
@@ -267,4 +269,11 @@ margin:30px 40px 5px;
 width:35px;
 height:35px;
 object-fit:contain;
+}
+
+.section-divider{
+width:60%;
+height:1px;
+background:#e5e5e5;
+margin:60px auto;
 }
