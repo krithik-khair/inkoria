@@ -260,30 +260,6 @@ align-items:center;
 gap:12px;
 font-size:30px;
 font-family:'Playfair Display', serif;
-margin:60px 40px 20px;
-}
-
-.trending-label{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:30px;
-font-family:'Playfair Display', serif;
-margin:40px 40px 10px;
-}
-
-.fire-icon{
-width:26px;
-height:26px;
-fill:#ff3b30;
-}
-
-.trending-label{
-display:flex;
-align-items:center;
-gap:12px;
-font-size:30px;
-font-family:'Playfair Display', serif;
 margin:30px 40px 5px;
 }
 
@@ -291,4 +267,13 @@ margin:30px 40px 5px;
 width:28px;
 height:28px;
 object-fit:contain;
+}
+
+.trending-label{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:30px;
+font-family:'Playfair Display', serif;
+margin:30px 40px 5px;
 }
